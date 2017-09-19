@@ -3,90 +3,32 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Laravel-CoreUI-Vue</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+    
+    <!-- BODY options, add following classes to body to change options
+    // Header options
+    1. '.header-fixed'					- Fixed Header
+    // Sidebar options
+    1. '.sidebar-fixed'					- Fixed Sidebar
+    2. '.sidebar-hidden'				- Hidden Sidebar
+    3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+    4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+    5. '.sidebar-compact'			  - Compact Sidebar
+    // Aside options
+    1. '.aside-menu-fixed'			- Fixed Aside Menu
+    2. '.aside-menu-hidden'			- Hidden Aside Menu
+    3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+    // Breadcrumb options
+    1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+    // Footer options
+    1. '.footer-fixed'					- Fixed footer
+    -->
+    <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <div id="app"></div>
+    <script src="{{ mix('/js/app.css') }}"></script>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://github.com/pkeogan/Laravel-CoreUI-Vue">Repo</a>
-                    <a href="https://pkeogan.com">Pkeogan</a>
-                </div>
-            </div>
-        </div>
-    </body>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
