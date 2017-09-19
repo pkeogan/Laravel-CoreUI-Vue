@@ -1,11 +1,11 @@
 <template>
   <header class="app-header navbar">
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button" @click="mobileSidebarToggle">&#9776;</button>
-    <b-link class="navbar-brand" to="#"></b-link>
+    <b-link class="navbar-brand" to="http://pkeogan.com"></b-link>
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" @click="sidebarMinimize">&#9776;</button>
     <b-nav is-nav-bar class="d-md-down-none">
       <b-nav-item class="px-3">Dashboard</b-nav-item>
-      <b-nav-item class="px-3">Users</b-nav-item>
+      <b-nav-item class="px-3">Personnel</b-nav-item>
       <b-nav-item class="px-3">Settings</b-nav-item>
     </b-nav>
     <b-nav is-nav-bar class="ml-auto">
