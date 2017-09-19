@@ -27,7 +27,7 @@
     -->
     <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
     <div id="app"></div>
-    <script src="{{ mix('/js/app.css') }}"></script>
+    <script src="{{ mix('/js/app.js') }}"></script>
 
     <!-- built files will be auto injected -->
   </body>
